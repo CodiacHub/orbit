@@ -2,7 +2,28 @@ $blue: #0F1430
 
 html
 	background: $blue
-	color: white
+
+.bg
+	background-color: saturate(lighten($blue, 10%), 10%)
+	position: fixed
+	top: 50%
+	left: 50%
+	min-width: 100%
+	min-width-height: 100%
+	width: auto
+	height: auto
+	z-index: -100
+	-ms-transform: translateX(-50%) translateY(-50%)
+	-moz-transform: translateX(-50%) translateY(-50%)
+	-webkit-transform: translateX(-50%) translateY(-50%)
+	transform: translateX(-50%) translateY(-50%)
+	video
+		background-size: cover
+
+		+filter(opacity(.3))
+
+		
+
 
 .site
 	+outer-container
@@ -11,9 +32,10 @@ html
 		min-height: 100vh
 		+span-columns(6)
 		+shift(3)
+		text-align: center
 
 		.logo
 			width: 250px
-			+margin(5em auto 5em auto)
+			+margin(5em auto 10em auto)
 
 	

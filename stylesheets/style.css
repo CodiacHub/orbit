@@ -154,7 +154,11 @@ h6 {
   font-family: "Roboto";
   font-size: 1em;
   line-height: 1.2;
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-weight: 300; }
+
+h1 {
+  font-size: 5em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -179,8 +183,26 @@ picture {
   max-width: 100%; }
 
 html {
-  background: #0F1430;
-  color: white; }
+  background: #0F1430; }
+
+.bg {
+  background-color: #15205d;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-width-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+  .bg video {
+    background-size: cover;
+    -webkit-filter: opacity(0.3);
+    filter: opacity(0.3); }
 
 .site {
   max-width: 68em;
@@ -196,11 +218,12 @@ html {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    margin-left: 25.58941%; }
+    margin-left: 25.58941%;
+    text-align: center; }
     .site .hero:last-child {
       margin-right: 0; }
     .site .hero .logo {
       width: 250px;
-      margin: 5em auto; }
+      margin: 5em auto 10em; }
 
 /*# sourceMappingURL=style.css.map */
