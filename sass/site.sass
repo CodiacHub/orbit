@@ -1,4 +1,6 @@
 $space-blue: #0d1128
+$light-blue: #144f99
+
 
 
 html
@@ -7,7 +9,10 @@ html
 
 .bg
 	z-index: -900
-
+	.overlay
+		z-index: -898
+		+linear-gradient($space-blue, lighten($light-blue, 10%))
+		+filter(opacity(0.2))
 
 
 .site
@@ -15,10 +20,19 @@ html
 
 	.hero
 		min-height: 100vh
-		height: 4000px
+		//height: 4000px
 		+span-columns(6)
 		+shift(3)
 		text-align: center
+		
+
+		.hero-header
+			margin: 0 auto !important
+			> *
+				margin: 0
+
+
+	
 
 		.logo
 			width: 250px

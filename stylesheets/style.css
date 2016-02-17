@@ -13,7 +13,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto";
+  font-family: "nexa light";
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -52,7 +52,7 @@ label {
 input,
 select {
   display: block;
-  font-family: "Roboto";
+  font-family: "nexa light";
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -62,7 +62,7 @@ select[multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "nexa light";
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -141,7 +141,7 @@ th {
 
 body {
   color: white;
-  font-family: "Roboto";
+  font-family: "nexa light";
   font-size: 1em;
   line-height: 1.5; }
 
@@ -151,14 +151,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto";
+  font-family: "nexa";
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em;
   font-weight: 300; }
 
-h1 {
+h1, h2 {
   font-size: 3em; }
+
+h2 {
+  font-family: 'nexa light'; }
 
 p {
   margin: 0 0 0.75em; }
@@ -187,6 +190,13 @@ html {
 
 .bg {
   z-index: -900; }
+  .bg .overlay {
+    z-index: -898;
+    background-color: #0d1128;
+    background-image: -webkit-linear-gradient(#0d1128, #1a66c6);
+    background-image: linear-gradient(#0d1128, #1a66c6);
+    -webkit-filter: opacity(0.2);
+    filter: opacity(0.2); }
 
 .site {
   max-width: 68em;
@@ -198,7 +208,6 @@ html {
     display: table; }
   .site .hero {
     min-height: 100vh;
-    height: 4000px;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -207,6 +216,10 @@ html {
     text-align: center; }
     .site .hero:last-child {
       margin-right: 0; }
+    .site .hero .hero-header {
+      margin: 0 auto !important; }
+      .site .hero .hero-header > * {
+        margin: 0; }
     .site .hero .logo {
       width: 250px;
       margin: 5em auto 10em; }
