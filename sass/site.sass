@@ -5,38 +5,55 @@ $light-blue: #144f99
 
 html
 	background: $space-blue
+	color: white
+	overflow-x: hidden
+
+
+
+
+.oval
+	
+	width: 150%
+	margin-top: -150px
+	margin-left: -25%
+	height: 300px
+	background: $space-blue
+	-moz-border-radius: 100px / 50px
+	-webkit-border-radius: 100px / 50px
+	border-radius: 100%
+
 
 
 .bg
-	z-index: -900
+
+
+	
 	.overlay
 		z-index: -898
-		+linear-gradient($space-blue, lighten($light-blue, 10%))
-		+filter(opacity(0.2))
+		+linear-gradient($space-blue, lighten($light-blue, 30%))
+		+filter(opacity(0.4))
 
 
-.site
+.content
 	+outer-container
+	
 
 	.hero
 		min-height: 100vh
-		//height: 4000px
 		+span-columns(6)
 		+shift(3)
 		text-align: center
 		
 
 		.hero-header
+
 			margin: 0 auto !important
 			> *
 				margin: 0
 				text-align: center
 
-
-	
-
 		.logo
 			width: 250px
-			margin: 10em auto
+			margin: 5em auto
 
 	

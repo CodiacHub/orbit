@@ -1,6 +1,6 @@
-/* ============================================================================================== 
+/* ==============================================================================================
 This copyright notice must be kept untouched in the stylesheet at all times.
-The original version of this stylesheet and the associated (x)html 
+The original version of this stylesheet and the associated (x)html
 is available at http://www.script-tutorials.com/night-sky-with-twinkling-stars/
 Copyright (c) Script Tutorials. All rights reserved.
 This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
@@ -17,11 +17,14 @@ This stylesheet and the associated (x)html may be modified in any way to fit you
 }
 @-moz-keyframes move-twink-back {
     from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    to {background-position:-10000px 5000px;
+    }
 }
 @-ms-keyframes move-twink-back {
     from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+    to {background-position:-10000px 5000px;
+
+    }
 }
 
 
@@ -38,12 +41,15 @@ This stylesheet and the associated (x)html may be modified in any way to fit you
 }
 
 .stars {
-  background: black url(../assets/stars.png) repeat top center;
+  background: black url(../assets/stars.png) repeat center center fixed;
+  background-size: cover;
+
   z-index:-900;
 }
 
 .twinkling{
-  background:transparent url(../assets/twinkling.png) repeat top center;
+  background:transparent url(../assets/twinkling.png) repeat center center fixed;
+
   z-index:-899;
 
   -moz-animation:move-twink-back 350s linear infinite;
@@ -52,4 +58,3 @@ This stylesheet and the associated (x)html may be modified in any way to fit you
   -webkit-animation:move-twink-back 350s linear infinite;
   animation:move-twink-back 350s linear infinite;
 }
-

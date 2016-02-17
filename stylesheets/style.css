@@ -186,27 +186,37 @@ picture {
   max-width: 100%; }
 
 html {
-  background: #0d1128; }
+  background: #0d1128;
+  color: white;
+  overflow-x: hidden; }
 
-.bg {
-  z-index: -900; }
-  .bg .overlay {
-    z-index: -898;
-    background-color: #0d1128;
-    background-image: -webkit-linear-gradient(#0d1128, #1a66c6);
-    background-image: linear-gradient(#0d1128, #1a66c6);
-    -webkit-filter: opacity(0.2);
-    filter: opacity(0.2); }
+.oval {
+  width: 150%;
+  margin-top: -150px;
+  margin-left: -25%;
+  height: 300px;
+  background: #0d1128;
+  -moz-border-radius: 100px/50px;
+  -webkit-border-radius: 100px/50px;
+  border-radius: 100%; }
 
-.site {
+.bg .overlay {
+  z-index: -898;
+  background-color: #0d1128;
+  background-image: -webkit-linear-gradient(#0d1128, #5c9bea);
+  background-image: linear-gradient(#0d1128, #5c9bea);
+  -webkit-filter: opacity(0.4);
+  filter: opacity(0.4); }
+
+.content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .site::after {
+  .content::after {
     clear: both;
     content: "";
     display: table; }
-  .site .hero {
+  .content .hero {
     min-height: 100vh;
     float: left;
     display: block;
@@ -214,15 +224,15 @@ html {
     width: 48.82117%;
     margin-left: 25.58941%;
     text-align: center; }
-    .site .hero:last-child {
+    .content .hero:last-child {
       margin-right: 0; }
-    .site .hero .hero-header {
+    .content .hero .hero-header {
       margin: 0 auto !important; }
-      .site .hero .hero-header > * {
+      .content .hero .hero-header > * {
         margin: 0;
         text-align: center; }
-    .site .hero .logo {
+    .content .hero .logo {
       width: 250px;
-      margin: 10em auto; }
+      margin: 5em auto; }
 
 /*# sourceMappingURL=style.css.map */
