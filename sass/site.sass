@@ -1,28 +1,13 @@
-$blue: #0F1430
+$space-blue: #0d1128
+
 
 html
-	background: $blue
+	background: $space-blue
+
 
 .bg
-	background-color: saturate(lighten($blue, 10%), 10%)
-	position: fixed
-	top: 50%
-	left: 50%
-	min-width: 100%
-	min-width-height: 100%
-	width: auto
-	height: auto
-	z-index: -100
-	-ms-transform: translateX(-50%) translateY(-50%)
-	-moz-transform: translateX(-50%) translateY(-50%)
-	-webkit-transform: translateX(-50%) translateY(-50%)
-	transform: translateX(-50%) translateY(-50%)
-	video
-		background-size: cover
+	z-index: -900
 
-		+filter(opacity(.3))
-
-		
 
 
 .site
@@ -30,6 +15,7 @@ html
 
 	.hero
 		min-height: 100vh
+		height: 4000px
 		+span-columns(6)
 		+shift(3)
 		text-align: center

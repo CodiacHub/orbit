@@ -158,7 +158,7 @@ h6 {
   font-weight: 300; }
 
 h1 {
-  font-size: 5em; }
+  font-size: 3em; }
 
 p {
   margin: 0 0 0.75em; }
@@ -183,26 +183,10 @@ picture {
   max-width: 100%; }
 
 html {
-  background: #0F1430; }
+  background: #0d1128; }
 
 .bg {
-  background-color: #15205d;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-width-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%); }
-  .bg video {
-    background-size: cover;
-    -webkit-filter: opacity(0.3);
-    filter: opacity(0.3); }
+  z-index: -900; }
 
 .site {
   max-width: 68em;
@@ -214,6 +198,7 @@ html {
     display: table; }
   .site .hero {
     min-height: 100vh;
+    height: 4000px;
     float: left;
     display: block;
     margin-right: 2.35765%;
