@@ -211,13 +211,13 @@ html {
 .content {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  min-height: 100vh; }
   .content::after {
     clear: both;
     content: "";
     display: table; }
   .content .hero {
-    min-height: 100vh;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -234,5 +234,12 @@ html {
     .content .hero .logo {
       width: 250px;
       margin: 5em auto; }
+  .content .dash {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .content .dash:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
