@@ -219,9 +219,10 @@ html {
     .site .hero .hero-header {
       margin: 0 auto !important; }
       .site .hero .hero-header > * {
-        margin: 0; }
+        margin: 0;
+        text-align: center; }
     .site .hero .logo {
       width: 250px;
-      margin: 5em auto 10em; }
+      margin: 10em auto; }
 
 /*# sourceMappingURL=style.css.map */
