@@ -186,7 +186,7 @@ picture {
   max-width: 100%; }
 
 html {
-  background: #060812;
+  background: #0b0f21;
   color: white;
   overflow-x: hidden; }
 
@@ -195,7 +195,7 @@ html {
   margin-top: -5%;
   margin-left: -25%;
   height: 300px;
-  background: #060812;
+  background: #0b0f21;
   -moz-border-radius: 100px/50px;
   -webkit-border-radius: 100px/50px;
   border-radius: 100%; }
