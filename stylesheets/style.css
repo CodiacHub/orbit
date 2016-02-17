@@ -241,5 +241,12 @@ html {
     width: 65.88078%; }
     .content .dash:last-child {
       margin-right: 0; }
+  .content aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .content aside:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
