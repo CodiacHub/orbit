@@ -186,7 +186,7 @@ picture {
   max-width: 100%; }
 
 html {
-  background: #0b0f21;
+  background: #12141b;
   color: white;
   overflow-x: hidden; }
 
@@ -195,7 +195,7 @@ html {
   margin-top: -5%;
   margin-left: -25%;
   height: 300px;
-  background: #0b0f21;
+  background: #12141b;
   -moz-border-radius: 100px/50px;
   -webkit-border-radius: 100px/50px;
   border-radius: 100%; }
@@ -208,45 +208,59 @@ html {
   -webkit-filter: opacity(0.4);
   filter: opacity(0.4); }
 
-.content {
+section {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh; }
-  .content::after {
+  section::after {
     clear: both;
     content: "";
     display: table; }
-  .content .hero {
+  section .hero {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
     margin-left: 25.58941%;
     text-align: center; }
-    .content .hero:last-child {
+    section .hero:last-child {
       margin-right: 0; }
-    .content .hero .hero-header {
+    section .hero .hero-header {
       margin: 0 auto !important; }
-      .content .hero .hero-header > * {
+      section .hero .hero-header > * {
         margin: 0;
         text-align: center; }
-    .content .hero .logo {
+    section .hero .logo {
       width: 250px;
       margin: 5em auto; }
-  .content .dash {
+  section .dash {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%; }
-    .content .dash:last-child {
+    section .dash:last-child {
       margin-right: 0; }
-  .content aside {
+  section .iphone {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section .iphone:last-child {
+      margin-right: 0; }
+  section aside {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    .content aside:last-child {
+    section aside:last-child {
+      margin-right: 0; }
+  section br {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section br:last-child {
       margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
