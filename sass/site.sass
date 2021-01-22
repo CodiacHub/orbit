@@ -1,0 +1,68 @@
+$dark-blue: #12141b
+$space-blue: #0d1128
+$light-blue: #144f99
+
+
+
+html
+	background: $dark-blue
+	color: white
+	overflow-x: hidden
+
+
+
+
+.oval
+	
+	width: 150%
+	margin-top: -5% 
+	margin-left: -25%
+	height: 300px
+	background: $dark-blue
+	-moz-border-radius: 100px / 50px
+	-webkit-border-radius: 100px / 50px
+	border-radius: 100%
+
+
+
+.bg
+
+
+	
+	.overlay
+		z-index: -898
+		+linear-gradient($space-blue, lighten($light-blue, 30%))
+		+filter(opacity(0.4))
+
+
+section
+	+outer-container
+	min-height: 100vh
+	
+
+	.hero
+	
+		+span-columns(6)
+		+shift(3)
+		text-align: center
+		
+
+		.hero-header
+
+			margin: 0 auto !important
+			> *
+				margin: 0
+				text-align: center
+
+		.logo
+			width: 250px
+			margin: 5em auto
+
+	.dash
+		+span-columns(8)
+	.iphone
+		+span-columns(8)
+	aside
+		+span-columns(4)
+	br 
+		+span-columns(12)
